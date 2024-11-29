@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Encargados</title>
+</head>
+<body>
+    <h1>Lista de Encargados</h1>
+    <ul>
+    {% for encargado in encargados %}
+        <li>{{ encargado.nombres }} {{ encargado.apellido_p }} {{ encargado.apellido_m }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

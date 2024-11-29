@@ -1,0 +1,34 @@
+body {
+    background-color: #000000; /* Fondo negro */
+    margin: 0;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh; 
+}
+
+.btn-container {
+    margin-bottom: 20px; 
+}
+
+.btn {
+    padding: 1.5rem 3rem; /* Ajusta el tamaño del botón */
+    border-radius: 0; /* Borde redondeado */
+    margin-bottom: 10px; /* Espaciado inferior entre botones */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ffffff; /* Borde del botón */
+    color: #ffffff; /* Color del texto blanco */
+    background-color: #000000; /* Fondo negro */
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    color: #000000; /* Color del texto negro al hacer hover */
+    background-color: #ffffff; /* Fondo blanco al hacer hover */
+    border-color: #000000; /* Borde negro al hacer hover */
+}

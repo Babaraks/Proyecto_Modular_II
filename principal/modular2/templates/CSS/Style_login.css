@@ -1,0 +1,48 @@
+/* Estilos para el fondo difuminado */
+body {
+  background-image: url("https://s0.smartresize.com/wallpaper/647/45/HD-wallpaper-books-on-bookshelf.jpg");
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo transparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.5); /* Sombra blanca */
+    width: 400px;
+}
+
+.form-container h1 {
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #ffffff; /* Texto blanco */
+}
+
+.form-control {
+    border-color: #ffffff80; /* Borde */
+    color: #ffffff; /* Texto */
+    background-color: transparent; /* Fondo */
+}
+
+.form-control:focus {
+    border-color: #ffffff; /* Borde al enfocar */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo al enfocar */
+}
+
+.btn-primary {
+    background-color: black; /* Color del botón */
+    border-color:  white /* Borde del botón */
+}
+
+.btn-primary:hover {
+    background-color: gray; /* Color del botón al pasar el ratón */
+    border-color: #4c1eaa; /* Borde del botón al pasar el ratón */
+}

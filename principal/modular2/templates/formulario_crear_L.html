@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Libro</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Agregar Libro</h1>
+        <form id="agregarLibroForm" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" value="{{ cleaned_title }}" required>
+            </div>
+            <div class="form-group">
+                <label for="autor">Autor:</label>
+                <input type="text" class="form-control" id="autor" name="autor" required>
+            </div>
+            <div class="form-group">
+                <label for="editorial">Editorial:</label>
+                <input type="text" class="form-control" id="editorial" name="editorial" required>
+            </div>
+            <div class="form-group">
+                <label for="edicion">Edición:</label>
+                <input type="text" class="form-control" id="edicion" name="edicion" required>
+            </div>
+            <div class="form-group">
+                <label for="ano_publicacion">Año de Publicación:</label>
+                <input type="number" class="form-control" id="ano_publicacion" name="ano_publicacion" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Genero:</label>
+                <input type="text" class="form-control" id="ano_publicacion" name="genero" required>
+            </div>
+            <div class="form-group">
+                <input type="hidden" id="sample_images_pca" name="sample_images_pca" value="{{ sample_images_pca }}" class="form-control d-none">
+            </div>
+            <button type="submit" class="btn btn-success">Guardar</button>    
+        </form>
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

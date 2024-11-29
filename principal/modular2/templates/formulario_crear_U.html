@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Crear Usuario</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre(s)</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido_p" class="form-label">Apellido Paterno</label>
+                <input type="text" class="form-control" id="apellido_p" name="apellido_p" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido_m" class="form-label">Apellido Materno</label>
+                <input type="text" class="form-control" id="apellido_m" name="apellido_m" required>
+            </div>
+            <div class="mb-3">
+                <label for="matricula" class="form-label">Matrícula</label>
+                <input type="text" class="form-control" id="matricula" name="matricula" required>
+            </div>
+            <div class="mb-3">
+                <label for="carrera" class="form-label">Carrera</label>
+                <input type="text" class="form-control" id="carrera" name="carrera" required>
+            </div>
+            <div class="mb-3">
+                <label for="grado" class="form-label">Grado</label>
+                <input type="text" class="form-control" id="grado" name="grado" required>
+            </div>
+            <div class="mb-3">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+            <a href="{% url 'lista_usuario' %}" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+    <!-- Bootstrap JS (opcional, solo si necesitas funcionalidades adicionales de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
